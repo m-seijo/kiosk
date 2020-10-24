@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: #000;
+  max-width: 800px;
+  max-height: 480px;
+  font-family: monospace;
+  font-size: 14px;
+  font-style: normal;
+  color: #fff;
+}
+
+#navigation {
+  width: 100px;
+  height: 480px;
+  display: block;
+  border: 1px blue solid;
+}
+
+#calendar {
+  font-size: 40px;
+}
+
+.calendar-widget {
+  color: red;
+}
+
+#weather {
+  width: 700px;
+  height: 480px;
+  border: 1px red solid;
+}
+
+#weatherwidget {
+
+ }
+
+#time-wrapper {
+  font-size: 80px;
+}
