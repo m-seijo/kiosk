@@ -1,5 +1,6 @@
 # todo list
 
+* [x] Create the layout
 * [ ] Create navigation menu
 * [ ] Display time
 * [ ] Display family calendar
