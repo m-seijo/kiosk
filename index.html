@@ -9,25 +9,42 @@
     <script src="js/kiosk.js" type="text/javascript"></script>
   </head>
   <body>
-    <menu id="navigation">
-      Menu
-      Calendar
-      Photo
-      Weather
-      Time
-    </menu>
+    <div id="navigation">
+      <a href="#" id="menu-icon" alt="Menu icon">Menu</a>
+      <a href="#" id="time-icon" alt="Time icon">Time</a>
+      <a href="#" id="calendar-icon" alt="Calendar icon">Calendar</a>
+      <a href="#" id="weather-icon" alt="Weather icon">Weather</a>
+      <a href="#" id="photo-icon" alt="Photo icon">Photo</a>
+    </div>
+
+    <section id="time">
+      <h1 id="t">Time</h1>
+      <script>
+      // display time
+      const dt = new Date();
+      const options = {
+              timeZone: "America/Los_Angeles",
+              hour12: true,
+              weekday: 'long',
+              // year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+              hour: 'numeric',
+              minute: 'numeric'
+            };
+
+      // display something like "Thursday, February 14, 02:55"
+      // console.log(dt.toLocaleString('en-US', options));
+
+      document.getElementById('t').innerText = dt.toLocaleString('en-US', options);
+      </script>
+    </section>
 
     <section id="calendar">
       <h1>Calendar</h1>
       <!-- bring your google calendar
       <iframe class="calendar-widget" src="add-your-calendar-uri-here" style="border-width:0" width="700" height="480" frameborder="0" scrolling="no"></iframe>
       -->
-    </section>
-
-    <section id="photo">
-      // photo
-      <img src="https://images.wsdot.wa.gov/nw/099vc01549.jpg" width= "700px" alt="Seattle traffic camera photo" class="main-image">
-
     </section>
 
     <section id="weather">
@@ -38,10 +55,9 @@
       </script>
     </section>
 
-    <section id="time-wrapper">
-      <h1 id="local-time">Time</h1>
+    <section id="photo">
+      <img src="https://images.wsdot.wa.gov/nw/099vc02969.jpg" width= "700px" alt="Seattle traffic camera photo" class="main-image">
     </section>
-
 
   </body>
 </html>
