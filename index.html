@@ -18,25 +18,21 @@
     </div>
 
     <section id="time">
-      <h1 id="t">Time</h1>
       <script>
       // display time
       const dt = new Date();
       const options = {
               timeZone: "America/Los_Angeles",
               hour12: true,
-              weekday: 'long',
+              weekday: 'short',
               // year: 'numeric',
-              month: 'long',
+              month: 'short',
               day: 'numeric',
               hour: 'numeric',
               minute: 'numeric'
             };
 
-      // display something like "Thursday, February 14, 02:55"
-      // console.log(dt.toLocaleString('en-US', options));
-
-      document.getElementById('t').innerText = dt.toLocaleString('en-US', options);
+      document.getElementById('time').innerText = dt.toLocaleString('en-US', options);
       </script>
     </section>
 

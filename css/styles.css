@@ -12,14 +12,35 @@ body {
 }
 
 #navigation {
-  width: 100px;
+  width: 90px;
   height: 480px;
   display: block;
   border: 1px blue solid;
+  float: left;
+}
+
+#time {
+  width: 700px;
+  height: 480px;
+  border: 0px green solid;
+  font-size: 9em;
+  font-weight: bold;
+  float: right;
+  display: inline-flex;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#t {
+  text-align: center;
 }
 
 #calendar {
+  width: 700px;
+  height: 480px;
+  border: 1px pink solid;
   font-size: 40px;
+  float: right;
 }
 
 .calendar-widget {
@@ -29,13 +50,18 @@ body {
 #weather {
   width: 700px;
   height: 480px;
-  border: 1px red solid;
+  border: 0;
+  float: right;
+  vertical-align: middle;
+  font-size: 800px;
+  display: inline-flex;
 }
 
-#weatherwidget {
-
+ #photo {
+   width: 700px;
+   height: 480px;
+   border: 0;
+   float: right;
+   overflow: inherit;
+   display: inline-flex;
  }
-
-#time-wrapper {
-  font-size: 80px;
-}
