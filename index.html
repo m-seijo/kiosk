@@ -5,47 +5,23 @@
     <meta name="description" content="a dashboard Kiosk for Raspberry Pi.">
     <meta name="author" content="Mario Seijo">
     <title>Kiosk mode</title>
-    <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="https://kit.fontawesome.com/f54a5d7052.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/kiosk.js"></script>
   </head>
 
   <body>
-    <nav role="navigation">
-      <div id="menuToggle">
-        <!--
-        A fake / hidden checkbox is used as click reciever,
-        so you can use the :checked selector on it.
-        -->
-        <input type="checkbox" />
-
-        <!--
-        Some spans to act as a hamburger.
-
-        They are acting like a real hamburger,
-        not that McDonalds stuff.
-        -->
-        <span></span>
-        <span></span>
-        <span></span>
-
-        <!--
-        Too bad the menu has to be inside of the button
-        but hey, it's pure CSS magic.
-        -->
-        <ul id="menu">
-          <a href="#" onclick="loadTime();"><li>Time</li></a>
-          <a href="#" onclick="loadCalendar();"><li>Calendar</li></a>
-          <a href="#" onclick="loadWeather();"><li>Weather</li></a>
-          <a href="#" onclick="loadTraffic();"><li>Traffic</li></a>
-        </ul>
-      </div>
-    </nav>
+    <div id="navigation">
+      <i class="fas fa-clock" onclick="loadTime();"></i>
+      <i class="fas fa-calendar" onclick="loadCalendar();"></i>
+      <i class="fas fa-cloud-sun-rain" onclick="loadWeather();"></i>
+      <i class="fas fa-image" onclick="loadTraffic();"></i>
+    </div>
 
     <iframe id="dynamicContent"
-            width = "700px"
-            height = "480px"
-            src = "time.html">
+            frameborder="0"
+            scrolling="no"
+            src="time.html">
     </iframe>
-
   </body>
 </html>
