@@ -1,2 +1,2 @@
 # kiosk
-a dashboard kiosk for Raspberry Pi
+a minimal dashboard 

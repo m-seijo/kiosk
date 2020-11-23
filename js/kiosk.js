@@ -1,6 +1,31 @@
-console.log("hello world");
+// set things up
+
+function  loadTime() {
+
+  document.getElementById('dynamicContent').src =  "time.html";
+}
+
+function  loadCalendar() {
+
+  document.getElementById('dynamicContent').src =  "calendar.html";
+}
 
 
+function  loadWeather() {
+
+  document.getElementById('dynamicContent').src =  "weather.html";
+}
+
+
+function  loadTraffic() {
+
+  document.getElementById('dynamicContent').src =  "traffic.html";
+}
+
+
+
+
+// displayTime();
 // var d = new Date();
 // document.getElementById("demo").innerHTML = d;
 
@@ -46,17 +71,17 @@ console.log("hello world");
 // document.body.appendChild(dt);
 
 
-function addZero(i) {
-  if (i < 10) {
-    i = "0" + i;
-  }
-  return i;
-}
-
-var d = new Date();
-var t = document.getElementById("t");
-var h = addZero(d.getHours());
-var m = addZero(d.getMinutes());
-var s = addZero(d.getSeconds());
-//t.innerHTML = h + ":" + m + ":" + s;
-//document.getElementById('t').innerText = h + ":" + s;
+// function addZero(i) {
+//   if (i < 10) {
+//     i = "0" + i;
+//   }
+//   return i;
+// }
+//
+// var d = new Date();
+// var t = document.getElementById("t");
+// var h = addZero(d.getHours());
+// var m = addZero(d.getMinutes());
+// var s = addZero(d.getSeconds());
+// //t.innerHTML = h + ":" + m + ":" + s;
+// //document.getElementById('t').innerText = h + ":" + s;
