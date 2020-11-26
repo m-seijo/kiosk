@@ -1,8 +1,8 @@
 # todo list
 
 * [x] Create the layout
-* [ ] Create navigation menu
-* [ ] Display time
+* [x] Create navigation menu
+* [x] Display time
 * [ ] Display family calendar
 * [ ] Display local weather
 * [ ] Display image from nearby traffic camera
