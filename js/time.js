@@ -1,7 +1,5 @@
 // display time
 
-var timeoutID
-
 function displayTime() {
 
   const dt = new Date();
